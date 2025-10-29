@@ -18,7 +18,7 @@ Each check-in is stored immutably on the blockchain with a timestamp.
 - **Block Number:** 8,442,004  
 - **Timestamp:** Oct 29, 2025  
 - **Deployed By:** `0xC6a4Df3e3c65ab6930FF99ade096302429e618cC`  
-- **Contract Address:** [`0xC6a4Df3e3c65ab6930FF99ade096302429e618cC`](https://celo-sepolia.blockscout.com/address/0xC6a4Df3e3c65ab6930FF99ade096302429e618cC)
+- **Contract Address: https://celo-sepolia.blockscout.com/address/0xC6a4Df3e3c65ab6930FF99ade096302429e618cC
 
 ---
 
