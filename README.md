@@ -24,78 +24,60 @@ Each check-in is stored immutably on the blockchain with a timestamp.
 
 ## 📜 Smart Contract
 
-```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+// A simple smart contract to record presence immutably on blockchain
 contract PresenceTracker {
+    // Struct to store presence record
     struct Presence {
         address user;
         uint256 timestamp;
     }
 
+    // Array to store all presence records
     Presence[] public presences;
 
+    // Event for logging when someone checks in
     event CheckedIn(address indexed user, uint256 timestamp);
 
+    // Function to mark presence
     function checkIn() public {
         presences.push(Presence(msg.sender, block.timestamp));
         emit CheckedIn(msg.sender, block.timestamp);
     }
 
+    // Function to get total number of check-ins
     function totalCheckIns() public view returns (uint256) {
         return presences.length;
     }
+
+    // Function to get all presence records
+    function getAllPresences() public view returns (Presence[] memory) {
+        return presences;
+    }
 }
-🧩 Features
-Records each user’s presence with an immutable timestamp
+## 🚀 Deployment Info
+Environment: Celo Remix IDE + MetaMask
+Compiler Version: 0.8.0
+Network Used: Celo Sepolia (Testnet)
+Deployed Successfully: ✅ Transaction confirmed and verified on Blockscout Explorer.
+📷 Screenshot
 
-Emits an event on every check-in
 
-Anyone can check the total number of check-ins on-chain
 
-🧠 Tech Stack
-Language: Solidity ^0.8.0
+Example deployment confirmation from Blockscout:
+(Add your uploaded screenshot here)
+Screenshot 2025-10-29 at 16.26.03.jpg
 
-Network: Celo Sepolia Testnet
+💡 Future Enhancements
+Add user authentication using wallet signatures.
+Integrate with a frontend dApp to visualize check-ins.
+Store records using IPFS or The Graph for decentralized analytics.
+👨‍💻 Author
 
-Tooling: Remix IDE / MetaMask / Blockscout
 
-🪄 Future Improvements
-Add role-based access control
 
-Enable off-chain data logging (via The Graph / Oracles)
-
-Integrate front-end UI for live presence tracking
-
-👤 Author
 Arnab Kr Pal
-AI & ML Student | Tech Enthusiast | Blockchain Learner
-
-📫 Connect with me:
-
-GitHub
-
-LinkedIn
-
-yaml
-Copy code
-
----
-
-This format:
-- Adds emojis and spacing for readability  
-- Separates code from text clearly  
-- Includes headings (`##`) for structure  
-- Makes links clickable  
-- Looks great in **dark or light GitHub themes**
-
----
-
-Would you like me to make it look **like a professional open-source template** (with badges, license, and deployment instructions section)? I can generate that version too.
-
-
-
-
-
+🎓 AI & ML Student | Narula Institute of Technology
 
