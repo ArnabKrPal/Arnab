@@ -13,6 +13,7 @@ Status: ✅ Success
 Block Number: 8,442,004
 Timestamp: Oct 29, 2025 – Confirmed within 1 second
 Deployed By: 0xC6a4DF3e3c65ab6930FF99ade096302429e8168C
+Contract Address: https://celo-sepolia.blockscout.com/tx/0xa79bf83f6b61a781fa2e6a2501bd5d506e8c075adf6f441689aa49e4ed67c45b
 📜 Smart Contract Code
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
