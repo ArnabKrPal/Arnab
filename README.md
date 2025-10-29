@@ -61,12 +61,12 @@ Compiler Version: 0.8.0
 Network Used: Celo Sepolia (Testnet)
 Deployed Successfully: ✅ Transaction confirmed and verified on Blockscout Explorer.
 📷 Screenshot
+<img width="1470" height="956" alt="Screenshot 2025-10-29 at 16 26 03" src="https://github.com/user-attachments/assets/9c4437da-8e56-4188-8b6f-5b8d538a6e3d" />
 
 
 
 Example deployment confirmation from Blockscout:
-(Add your uploaded screenshot here)
-Screenshot 2025-10-29 at 16.26.03.jpg
+
 
 💡 Future Enhancements
 Add user authentication using wallet signatures.
