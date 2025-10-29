@@ -74,7 +74,6 @@ Integrate with a frontend dApp to visualize check-ins.
 Store records using IPFS or The Graph for decentralized analytics.
 
 👨‍💻 **Author**  
-**Arnab Kr Pal**  
-<br>
+**Arnab Kr Pal**  <br>
 🎓 AI & ML Student | Narula Institute of Technology
 
