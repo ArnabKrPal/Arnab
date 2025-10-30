@@ -22,41 +22,6 @@ Each check-in is stored immutably on the blockchain with a timestamp.
 
 ---
 
-## 📜 Smart Contract
-
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-// A simple smart contract to record presence immutably on blockchain
-contract PresenceTracker {
-    // Struct to store presence record
-    struct Presence {
-        address user;
-        uint256 timestamp;
-    }
-
-    // Array to store all presence records
-    Presence[] public presences;
-
-    // Event for logging when someone checks in
-    event CheckedIn(address indexed user, uint256 timestamp);
-
-    // Function to mark presence
-    function checkIn() public {
-        presences.push(Presence(msg.sender, block.timestamp));
-        emit CheckedIn(msg.sender, block.timestamp);
-    }
-
-    // Function to get total number of check-ins
-    function totalCheckIns() public view returns (uint256) {
-        return presences.length;
-    }
-
-    // Function to get all presence records
-    function getAllPresences() public view returns (Presence[] memory) {
-        return presences;
-    }
-}
 ## 🚀 Deployment Info
 Environment: Celo Remix IDE + MetaMask
 Compiler Version: 0.8.0
